@@ -1,0 +1,159 @@
+.welcome-page .advantages__inner {
+  margin-top: 40px;
+}
+.advantages {
+  margin-top: 80px;
+  &__section-title {
+    min-height: 140px;
+    border: 1px solid rgb(62, 62, 62);
+    background: rgb(16, 16, 16);
+    margin: 0 20px;
+    text-align: center;
+  }
+  &__inner {
+    --transX: -66.6%;
+    --transY: 66.6%;
+  }
+
+  &__inner--4 {
+    --transX: -75%;
+    --transY: 75%;
+  }
+  &__top {
+    height: 250px;
+    border-top: 1px solid rgb(62, 62, 62);
+    border-bottom: 1px solid rgb(62, 62, 62);
+    background: rgb(16, 16, 16);
+    position: relative;
+    overflow: hidden;
+  }
+  &__icons {
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: row;
+    transform: translateX(var(--transX));
+  }
+  &__icon {
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0 55px;
+    svg {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  &__bottom {
+    border: 1px solid rgb(62, 62, 62);
+    border-top: 0;
+    height: 300px;
+    margin: 0 20px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  &__text {
+    transform: translateY(var(--transY));
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+  }
+  &__text-item {
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    color: rgb(16, 16, 16);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  &__description {
+    color: rgb(16, 16, 16);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+}
+.cards {
+  margin: 40px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cards-item {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+  min-height: 500px;
+  border: 1px solid rgb(62, 62, 62);
+  background: rgb(16, 16, 16);
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: #fff;
+    .cards-item__description {
+      color: rgb(16, 16, 16);
+    }
+    .cards-item__svg * {
+      stroke: rgb(16, 16, 16);
+    }
+    .cards-item__text {
+      color: rgb(16, 16, 16);
+    }
+  }
+  &__top {
+  }
+  &__svg {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    * {
+      transition: all 0.3s ease-in;
+      stroke: #fff;
+    }
+  }
+  &__description {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+  }
+  &__btn {
+    &:hover {
+      background-color: rgb(16, 16, 16);
+      color: #fff;
+    }
+  }
+  &__text {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 24px;
+  }
+}
+.accordion__description {
+  width: 100%;
+}
+.international-page .cards {
+  margin: 80px 20px;
+}
+.international-page .cards-item {
+  min-height: 560px;
+}

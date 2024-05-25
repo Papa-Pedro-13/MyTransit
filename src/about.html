@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__inner">
+      @@include('html/header.html')
+
+      <main class="page about-page">
+
+        <section class="white-title-block">
+          <h2 class="white-title-block__headline">Что мы делаем?</h2>
+        </section>
+        <section class="description-block description-block--1">
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              В INDITAL мы гордимся тем, что являемся ведущим поставщиком комплексных услуг по оформлению таможенного
+              транзита, однако, мы также постоянно и усердно работаем над тем, чтобы стать ведущей компанией в сфере
+              комплексных логистических и таможенных услуг, соединяя бизнес с новыми возможностями по оптимизации
+              цепочек поставок на динамично меняющемся рынке.
+            </p>
+          </div>
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              Обладая многолетним опытом и глубоким пониманием международной
+              торговли, мы стремимся обеспечить бесперебойное перемещение ваших товаров через границу, обеспечивая
+              эффективную и своевременную доставку вашего груза в пункт назначения.
+            </p>
+          </div>
+        </section>
+        <section class="white-title-block">
+          <h2 class="white-title-block__headline">Наша миссия</h2>
+        </section>
+        <section class="description-block description-block--2">
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              В INDITAL наша миссия — обеспечить бесперебойное трансграничное
+              перемещение товаров, используя передовые ИТ технологии и автоматизацию для достижения максимально
+              оперативного и точного предоставления любых логистических и таможенных процессов.
+            </p>
+          </div>
+
+        </section>
+        <section class="white-title-block">
+          <h2 class="white-title-block__headline">Наша видение</h2>
+        </section>
+        <section class="description-block description-block--3">
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              Вдохновленные инновациями и стремлением к совершенству, в INDITAL мы видим будущее, в котором
+              бесперебойная глобальная торговля станет реальностью благодаря нашим инновационным решениям в сфере
+              комплексной международной логистики.
+            </p>
+          </div>
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              Будущее, в котором все таможенные операции можно совершить нажатием одной кнопки, а подробную информацию о
+              поставках можно получить в любое время.
+            </p>
+          </div>
+          <div class="description-block__item">
+            <p class="description-block__paragraph">
+              Наше видение — быть надежным партнером, который превращает проблемы
+              в возможность, устанавливает новые стандарты эффективности и надежности в логистической отрасли.</p>
+          </div>
+        </section>
+
+        <section class="white-title-block">
+          <h2 class="white-title-block__headline">Наша команда</h2>
+        </section>
+        <section class="team">
+          <div class="team__card">
+            <div class="team__img-block">
+              <img src="./images/team.png" alt="" class="team__img">
+            </div>
+            <div class="team__bottom">
+              <div class="team__name">Денис Измайлович</div>
+              <div class="team__post">CEO</div>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-block">
+              <img src="./images/team.png" alt="" class="team__img">
+            </div>
+            <div class="team__bottom">
+              <div class="team__name">Анастасия Забидова</div>
+              <div class="team__post">CBDO</div>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-block">
+              <img src="./images/team.png" alt="" class="team__img">
+            </div>
+            <div class="team__bottom">
+              <div class="team__name">Сергей Адамски</div>
+              <div class="team__post">Руководитель Латвийского филиала</div>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-block">
+              <img src="./images/team.png" alt="" class="team__img">
+            </div>
+            <div class="team__bottom">
+              <div class="team__name">Гульнара Мусаева</div>
+              <div class="team__post">Руководитель Азербайджанского филиала</div>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-block">
+              <img src="./images/team.png" alt="" class="team__img">
+            </div>
+            <div class="team__bottom">
+              <div class="team__name">Волкан Эроглу</div>
+              <div class="team__post">Руководитель Турецкого филиала</div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="form-block">
+          <div class="form-block__top">
+            <div class="form-block__headline">Оставьте заявку</div>
+            <p class="form-block__text">Свяжитесь с нами сегодня, чтобы узнать, как наш опыт может упростить ваш
+              логистический
+              путь</p>
+
+          </div>
+          <form class="form-block__form form" action='#' method='post'>
+            <input class='form__input' type="text" placeholder='Имя' name='name'>
+            <input class='form__input' type="text" placeholder='Фамилия' name='surname'>
+            <input class='form__input' type="text" placeholder='Email' name='email'>
+            <input class='form__input' type="text" placeholder='Телефон' name='tel'>
+            <button class='form__btn' type="submit">Отправить</button>
+          </form>
+        </section>
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

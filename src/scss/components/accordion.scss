@@ -1,0 +1,154 @@
+.accordion {
+  /** Установить свои значения */
+  $radius: 0;
+  $icon-size: 18;
+
+  // .accordion__item
+  &__item {
+    /** Установить свои значения */
+    background: rgb(16, 16, 16);
+    border: 1px solid rgb(62, 62, 62);
+    transition: 0.3s ease-in-out;
+    border-top: 0;
+    &.open {
+      .accordion__title,
+      .accordion__number {
+        color: rgb(16, 16, 16);
+      }
+
+      .accordion__header {
+        /** Установить свои значения */
+
+        background-color: #fff;
+        color: rgb(16, 16, 16);
+
+        &:after {
+          transform: translateY(-50%) rotate(45deg);
+          background-image: url('data:image/svg+xml,<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><rect id="Rectangle 6954" x="8.500000" width="1.000000" height="18.000000" fill="%23101010" fill-opacity="1.000000"/><rect id="Rectangle 6955" x="18.000000" y="8.500000" width="1.000000" height="18.000000" transform="rotate(90 18.000000 8.500000)" fill="%23101010" fill-opacity="1.000000"/></svg>');
+        }
+      }
+
+      .accordion__content {
+        height: max-content;
+
+        /** Установить свои значения */
+        padding: rem(36) rem(8);
+      }
+      div.accordion__img {
+        padding: 20px;
+      }
+    }
+  }
+
+  // .accordion__header
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    /** Установить свои значения */
+    padding: 0 70px 0 0;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+      background: #fff;
+      .accordion__title,
+      .accordion__number {
+        color: rgb(16, 16, 16);
+      }
+      &:after {
+        background-image: url('data:image/svg+xml,<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><rect id="Rectangle 6954" x="8.500000" width="1.000000" height="18.000000" fill="%23101010" fill-opacity="1.000000"/><rect id="Rectangle 6955" x="18.000000" y="8.500000" width="1.000000" height="18.000000" transform="rotate(90 18.000000 8.500000)" fill="%23101010" fill-opacity="1.000000"/></svg>');
+      }
+    }
+
+    &:active {
+      background: #fff;
+    }
+
+    @include pseudo-cell(after, static) {
+      transform: translateY(-50%) rotate(90deg);
+
+      height: rem($icon-size);
+      width: 70px;
+
+      background-image: url('data:image/svg+xml,<svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><rect id="Rectangle 6954" x="8.500000" width="1.000000" height="18.000000" fill="%23FFFFFF" fill-opacity="1.000000"/><rect id="Rectangle 6955" x="18.000000" y="8.500000" width="1.000000" height="18.000000" transform="rotate(90 18.000000 8.500000)" fill="%23FFFFFF" fill-opacity="1.000000"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.6s ease-in-out;
+      position: absolute;
+      top: 50%;
+
+      right: 0;
+    }
+  }
+
+  // .accordion__content
+  &__content {
+    height: 0;
+    overflow: hidden;
+
+    /** Установить свои значения */
+    padding: 0 rem(8);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__title {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    width: 100%;
+    border-right: 1px solid rgb(62, 62, 62);
+  }
+
+  &__description {
+    padding: 0;
+    border-right: 1px solid rgb(62, 62, 62);
+  }
+  &__item.open .accordion__content {
+    padding: 0 20px 20px;
+  }
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+  &__number {
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    display: none;
+    left: 0;
+  }
+}
+.about {
+  background-color: rgb(16, 16, 16);
+  margin: 40px 20px 0;
+  &__headline {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    border: 1px solid rgb(62, 62, 62);
+    background: rgb(16, 16, 16);
+    min-height: 300px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+  }
+  &__accordion {
+  }
+}

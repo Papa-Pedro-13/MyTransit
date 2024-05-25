@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__inner">
+      @@include('html/header.html')
+
+      <main class="page main-page">
+        <section class="main-video">
+          <div class="main-video__video">
+            <video autoplay loop muted playsinline>
+              <source src="./static/main-video.mp4" type="video/mp4">
+              <source src="./static/main-video.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="main-video__container">
+            <h1 class="main-video__headline h1-title">INDITAL транзит</h1>
+            <div class="main-video__text">Обеспечение, оформление, логистика</div>
+          </div>
+        </section>
+
+        <section class="services-bl">
+          <div class="services-bl__section-title section-title">
+            Наши услуги
+          </div>
+          <div class="services-bl__inner">
+            <div class="services-bl__icons">
+              <div class="services-bl__icons-inner">
+                <img class='services-bl__icons-item' src="./images/services-illustration1.svg" alt="">
+                <img class='services-bl__icons-item' src="./images/services-illustration2.svg" alt="">
+                <img class='services-bl__icons-item' src="./images/services-illustration3.svg" alt="">
+                <img class='services-bl__icons-item' src="./images/services-illustration4.svg" alt="">
+              </div>
+            </div>
+            <div class="services-bl__items">
+              <div class="services-bl__items-inner">
+                <div class="services-bl__item">
+                  <div class="services-bl__headline">Таможенный транзит
+                    и обеспечение</div>
+                  <p class="services-bl__text">Беспрепятственно перевозите товары через границы с помощью наших
+                    экспертных
+                    услуг по оформлению таможенного транзита.
+                    Мы гарантируем, что ваше транспортное средство будет оформлено максимально оперативно и
+                    беспрепятственно
+                    пересечет границу.</p>
+                  <a href="#" class="services-bl__btn btn-more">Подробнее</a>
+                </div>
+                <div class="services-bl__item">
+                  <div class="services-bl__headline">Таможенное оформление</div>
+                  <p class="services-bl__text">Наша квалифицированная команда выполнит все ваши задачи по таможенному
+                    оформлению, обеспечивая быстрое и беспроблемное таможенное оформление.</p>
+                  <a href="#" class="services-bl__btn btn-more">Подробнее</a>
+                </div>
+                <div class="services-bl__item">
+                  <div class="services-bl__headline">Международные грузоперевозки</div>
+                  <p class="services-bl__text">Мы специализируемся на создании эффективных и надежных транспортных
+                    решений,
+                    помогая вам оптимизировать цепочку поставок для достижения максимальной эффективности и
+                    рентабельности
+                    вашего бизнеса.</p>
+                  <a href="#" class="services-bl__btn btn-more">Подробнее</a>
+                </div>
+                <div class="services-bl__item">
+                  <div class="services-bl__headline">Наши преимущества</div>
+                  <p class="services-bl__text">Оформление 24/7 <br>
+                    Гибкие цены <br>
+                    Сопровождение на всех этапах</p>
+                  <a href="#" class="services-bl__btn btn-more">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portal">
+          <div class="portal__section-title section-title">
+            Портал MyTransit
+          </div>
+          <div class="portal__headline">Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.</div>
+          <div class="portal__img-block">
+            <img class="portal__img" src="./images/portal-img.png" alt="">
+          </div>
+          <div class="portal__steps steps">
+            <div class="portal__step-item step-item">
+              <div class="step-item__number">01</div>
+              <div class="step-item__text">Контролируйте свои поставки, получайте доступ к информации о ценах,
+                проверяйте
+                таможенный статус и многое другое — все на одной безопасной и удобной платформе. </div>
+            </div>
+            <div class="portal__step-item step-item">
+              <div class="step-item__number">02</div>
+              <div class="step-item__text">Присоединяйтесь к рядам довольных клиентов, которые полагаются на INDITAL в
+                решении своих таможенных и транспортных задач. Начните сегодня с MyTransit.</div>
+            </div>
+          </div>
+          <div class="portal__bottom">
+            <div class="portal__btn btn-more btn-more--white">Подробнее</div>
+          </div>
+        </section>
+        <section class="analytics">
+          <div class="analytics__item">
+            <div class="analytics__item-inner">
+              <div class="analytics__title">Наглядная аналитика</div>
+              <div class="analytics__subtitle">Удобный дашборд со всей необходимой информацией.</div>
+              <img class='analytics__img' src="./images/analytics.png" alt="">
+              <img class='analytics__img--small' src="./images/analytics.png" alt="">
+            </div>
+          </div>
+          <div class="analytics__item">
+            <div class="analytics__item-inner">
+              <div class="analytics__title">Наглядная аналитика</div>
+              <div class="analytics__subtitle">Удобный дашборд со всей необходимой информацией.</div>
+              <img class='analytics__img' src="./images/analytics.png" alt="">
+              <img class='analytics__img--small' src="./images/analytics.png" alt="">
+            </div>
+          </div>
+          <div class="analytics__item">
+            <div class="analytics__item-inner">
+              <div class="analytics__title">Наглядная аналитика</div>
+              <div class="analytics__subtitle">Удобный дашборд со всей необходимой информацией.</div>
+              <img class='analytics__img' src="./images/analytics.png" alt="">
+              <img class='analytics__img--small' src="./images/analytics.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="comfort-block">
+          <div class="comfort-block__text">
+            Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.
+          </div>
+          <div class="comfort-block__btn btn-more btn-more--white">Подробнее</div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__section-title section-title">
+            Отзывы
+          </div>
+          <div class="reviews__inner">
+            <div class="reviews__item reviews-item">
+              <div class="reviews-item__top">
+                <div class="reviews-item__author">
+                  <div class="reviews-item__name">Евгений Онегин</div>
+                  <div class="reviews-item__company">Таня групп</div>
+                </div>
+
+                <svg class="reviews-item__logo" width="95" height="28" viewBox="0 0 95 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_46_1435)">
+                    <path
+                      d="M19.1806 16.2344C19.1806 17.1979 18.4203 17.9813 17.4852 17.9813C16.55 17.9813 15.7897 17.1979 15.7897 16.2344V11.7656C15.7897 8.99878 13.6044 6.74725 10.919 6.74725C8.23355 6.74725 6.04822 8.99878 6.04822 11.7656V27.5H9.22352V11.7656C9.22352 10.8021 9.98385 10.0187 10.919 10.0187C11.8541 10.0187 12.6144 10.8021 12.6144 11.7656V16.2344C12.6144 19.0012 14.7997 21.2528 17.4852 21.2528C20.1706 21.2528 22.3559 19.0012 22.3559 16.2344V0.5H19.1806V16.2344Z"
+                      fill="#101010" />
+                    <path d="M3.1753 7.04297H0V20.9544H3.1753V7.04297Z" fill="#101010" />
+                    <path d="M46.4699 7.04297H43.2946V20.9544H46.4699V7.04297Z" fill="#101010" />
+                    <path d="M86.5687 17.6829V7.04297H83.3921V20.9544H95V17.6829H86.5687Z" fill="#101010" />
+                    <path d="M48.21 10.308H54.1995V20.9544H57.3748V10.308H63.3644V7.03516H48.21V10.308Z"
+                      fill="#101010" />
+                    <path
+                      d="M34.1412 7.03516H25.2289V20.9544H34.1412C37.8663 20.9544 40.8962 17.8328 40.8962 13.9948C40.8962 10.1568 37.8663 7.03516 34.1412 7.03516ZM34.1412 17.683H28.4055V10.308H34.1412C36.1147 10.308 37.7209 11.9628 37.7209 13.9961C37.7209 16.0295 36.1147 17.6843 34.1412 17.6843V17.683Z"
+                      fill="#101010" />
+                    <path
+                      d="M64.9501 11.9431V20.9544H68.1254V17.683H77.1691V20.9544H80.3444V7.03516H69.7124C67.0857 7.03516 64.9489 9.23674 64.9489 11.9431H64.9501ZM77.1704 14.4101H68.1267V11.9431C68.1267 11.0414 68.8386 10.3066 69.715 10.3066H77.1716V14.4101H77.1704Z"
+                      fill="#101010" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_46_1435">
+                      <rect width="95" height="27" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reviews-item__text">Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.
+                Контролируйте свои поставки, получайте доступ к информации о ценах, проверяйте таможенный статус и
+                многое
+                другое — все на одной безопасной и удобной платформе.</div>
+            </div>
+            <div class="reviews__item reviews-item">
+              <div class="reviews-item__top">
+                <div class="reviews-item__author">
+                  <div class="reviews-item__name">Евгений Онегин</div>
+                  <div class="reviews-item__company">Таня групп</div>
+                </div>
+
+                <svg class="reviews-item__logo" width="95" height="28" viewBox="0 0 95 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_46_1435)">
+                    <path
+                      d="M19.1806 16.2344C19.1806 17.1979 18.4203 17.9813 17.4852 17.9813C16.55 17.9813 15.7897 17.1979 15.7897 16.2344V11.7656C15.7897 8.99878 13.6044 6.74725 10.919 6.74725C8.23355 6.74725 6.04822 8.99878 6.04822 11.7656V27.5H9.22352V11.7656C9.22352 10.8021 9.98385 10.0187 10.919 10.0187C11.8541 10.0187 12.6144 10.8021 12.6144 11.7656V16.2344C12.6144 19.0012 14.7997 21.2528 17.4852 21.2528C20.1706 21.2528 22.3559 19.0012 22.3559 16.2344V0.5H19.1806V16.2344Z"
+                      fill="#101010" />
+                    <path d="M3.1753 7.04297H0V20.9544H3.1753V7.04297Z" fill="#101010" />
+                    <path d="M46.4699 7.04297H43.2946V20.9544H46.4699V7.04297Z" fill="#101010" />
+                    <path d="M86.5687 17.6829V7.04297H83.3921V20.9544H95V17.6829H86.5687Z" fill="#101010" />
+                    <path d="M48.21 10.308H54.1995V20.9544H57.3748V10.308H63.3644V7.03516H48.21V10.308Z"
+                      fill="#101010" />
+                    <path
+                      d="M34.1412 7.03516H25.2289V20.9544H34.1412C37.8663 20.9544 40.8962 17.8328 40.8962 13.9948C40.8962 10.1568 37.8663 7.03516 34.1412 7.03516ZM34.1412 17.683H28.4055V10.308H34.1412C36.1147 10.308 37.7209 11.9628 37.7209 13.9961C37.7209 16.0295 36.1147 17.6843 34.1412 17.6843V17.683Z"
+                      fill="#101010" />
+                    <path
+                      d="M64.9501 11.9431V20.9544H68.1254V17.683H77.1691V20.9544H80.3444V7.03516H69.7124C67.0857 7.03516 64.9489 9.23674 64.9489 11.9431H64.9501ZM77.1704 14.4101H68.1267V11.9431C68.1267 11.0414 68.8386 10.3066 69.715 10.3066H77.1716V14.4101H77.1704Z"
+                      fill="#101010" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_46_1435">
+                      <rect width="95" height="27" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reviews-item__text">Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.
+                Контролируйте свои поставки, получайте доступ к информации о ценах, проверяйте таможенный статус и
+                многое
+                другое — все на одной безопасной и удобной платформе.</div>
+            </div>
+            <div class="reviews__item reviews-item">
+              <div class="reviews-item__top">
+                <div class="reviews-item__author">
+                  <div class="reviews-item__name">Евгений Онегин</div>
+                  <div class="reviews-item__company">Таня групп</div>
+                </div>
+
+                <svg class="reviews-item__logo" width="95" height="28" viewBox="0 0 95 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_46_1435)">
+                    <path
+                      d="M19.1806 16.2344C19.1806 17.1979 18.4203 17.9813 17.4852 17.9813C16.55 17.9813 15.7897 17.1979 15.7897 16.2344V11.7656C15.7897 8.99878 13.6044 6.74725 10.919 6.74725C8.23355 6.74725 6.04822 8.99878 6.04822 11.7656V27.5H9.22352V11.7656C9.22352 10.8021 9.98385 10.0187 10.919 10.0187C11.8541 10.0187 12.6144 10.8021 12.6144 11.7656V16.2344C12.6144 19.0012 14.7997 21.2528 17.4852 21.2528C20.1706 21.2528 22.3559 19.0012 22.3559 16.2344V0.5H19.1806V16.2344Z"
+                      fill="#101010" />
+                    <path d="M3.1753 7.04297H0V20.9544H3.1753V7.04297Z" fill="#101010" />
+                    <path d="M46.4699 7.04297H43.2946V20.9544H46.4699V7.04297Z" fill="#101010" />
+                    <path d="M86.5687 17.6829V7.04297H83.3921V20.9544H95V17.6829H86.5687Z" fill="#101010" />
+                    <path d="M48.21 10.308H54.1995V20.9544H57.3748V10.308H63.3644V7.03516H48.21V10.308Z"
+                      fill="#101010" />
+                    <path
+                      d="M34.1412 7.03516H25.2289V20.9544H34.1412C37.8663 20.9544 40.8962 17.8328 40.8962 13.9948C40.8962 10.1568 37.8663 7.03516 34.1412 7.03516ZM34.1412 17.683H28.4055V10.308H34.1412C36.1147 10.308 37.7209 11.9628 37.7209 13.9961C37.7209 16.0295 36.1147 17.6843 34.1412 17.6843V17.683Z"
+                      fill="#101010" />
+                    <path
+                      d="M64.9501 11.9431V20.9544H68.1254V17.683H77.1691V20.9544H80.3444V7.03516H69.7124C67.0857 7.03516 64.9489 9.23674 64.9489 11.9431H64.9501ZM77.1704 14.4101H68.1267V11.9431C68.1267 11.0414 68.8386 10.3066 69.715 10.3066H77.1716V14.4101H77.1704Z"
+                      fill="#101010" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_46_1435">
+                      <rect width="95" height="27" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reviews-item__text">Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.
+                Контролируйте свои поставки, получайте доступ к информации о ценах, проверяйте таможенный статус и
+                многое
+                другое — все на одной безопасной и удобной платформе.</div>
+            </div>
+            <div class="reviews__item reviews-item">
+              <div class="reviews-item__top">
+                <div class="reviews-item__author">
+                  <div class="reviews-item__name">Евгений Онегин</div>
+                  <div class="reviews-item__company">Таня групп</div>
+                </div>
+
+                <svg class="reviews-item__logo" width="95" height="28" viewBox="0 0 95 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_46_1435)">
+                    <path
+                      d="M19.1806 16.2344C19.1806 17.1979 18.4203 17.9813 17.4852 17.9813C16.55 17.9813 15.7897 17.1979 15.7897 16.2344V11.7656C15.7897 8.99878 13.6044 6.74725 10.919 6.74725C8.23355 6.74725 6.04822 8.99878 6.04822 11.7656V27.5H9.22352V11.7656C9.22352 10.8021 9.98385 10.0187 10.919 10.0187C11.8541 10.0187 12.6144 10.8021 12.6144 11.7656V16.2344C12.6144 19.0012 14.7997 21.2528 17.4852 21.2528C20.1706 21.2528 22.3559 19.0012 22.3559 16.2344V0.5H19.1806V16.2344Z"
+                      fill="#101010" />
+                    <path d="M3.1753 7.04297H0V20.9544H3.1753V7.04297Z" fill="#101010" />
+                    <path d="M46.4699 7.04297H43.2946V20.9544H46.4699V7.04297Z" fill="#101010" />
+                    <path d="M86.5687 17.6829V7.04297H83.3921V20.9544H95V17.6829H86.5687Z" fill="#101010" />
+                    <path d="M48.21 10.308H54.1995V20.9544H57.3748V10.308H63.3644V7.03516H48.21V10.308Z"
+                      fill="#101010" />
+                    <path
+                      d="M34.1412 7.03516H25.2289V20.9544H34.1412C37.8663 20.9544 40.8962 17.8328 40.8962 13.9948C40.8962 10.1568 37.8663 7.03516 34.1412 7.03516ZM34.1412 17.683H28.4055V10.308H34.1412C36.1147 10.308 37.7209 11.9628 37.7209 13.9961C37.7209 16.0295 36.1147 17.6843 34.1412 17.6843V17.683Z"
+                      fill="#101010" />
+                    <path
+                      d="M64.9501 11.9431V20.9544H68.1254V17.683H77.1691V20.9544H80.3444V7.03516H69.7124C67.0857 7.03516 64.9489 9.23674 64.9489 11.9431H64.9501ZM77.1704 14.4101H68.1267V11.9431C68.1267 11.0414 68.8386 10.3066 69.715 10.3066H77.1716V14.4101H77.1704Z"
+                      fill="#101010" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_46_1435">
+                      <rect width="95" height="27" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reviews-item__text">Ощутите удобство, как никогда прежде, с нашим порталом MyTransit.
+                Контролируйте свои поставки, получайте доступ к информации о ценах, проверяйте таможенный статус и
+                многое
+                другое — все на одной безопасной и удобной платформе.</div>
+            </div>
+          </div>
+        </section>
+        <section class="offices">
+          <div class="offices__section-title section-title">
+            Наши офисы
+          </div>
+          <div class="offices__inner">
+            <div class="offices__top">
+              <div class="offices__places">
+                <div class="offices__item">
+                  <div class="offices__name">Латвия</div>
+                  <p class="offices__text">Небольшое описание вашего прекрасного офиса</p>
+                </div>
+                <div class="offices__item">
+                  <div class="offices__name">Латвия</div>
+                  <p class="offices__text">Небольшое описание вашего прекрасного офиса</p>
+                </div>
+                <div class="offices__item">
+                  <div class="offices__name">Латвия</div>
+                  <p class="offices__text">Небольшое описание вашего прекрасного офиса</p>
+                </div>
+                <div class="offices__item">
+                  <div class="offices__name">Латвия</div>
+                  <p class="offices__text">Небольшое описание вашего прекрасного офиса</p>
+                </div>
+              </div>
+            </div>
+            <div class="offices__bottom">
+              <div class="offices__images">
+                <img src="./images/office.png" alt="" class="offices__img">
+                <img src="./images/office.png" alt="" class="offices__img">
+                <img src="./images/office.png" alt="" class="offices__img">
+                <img src="./images/office.png" alt="" class="offices__img">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form-block">
+          <div class="form-block__top">
+            <div class="form-block__headline">Оставьте заявку</div>
+            <p class="form-block__text">Свяжитесь с нами сегодня, чтобы узнать, как наш опыт может упростить ваш
+              логистический
+              путь</p>
+
+          </div>
+          <form class="form-block__form form" action='#' method='post'>
+            <input class='form__input' type="text" placeholder='Имя' name='name'>
+            <input class='form__input' type="text" placeholder='Фамилия' name='surname'>
+            <input class='form__input' type="text" placeholder='Email' name='email'>
+            <input class='form__input' type="text" placeholder='Телефон' name='tel'>
+            <button class='form__btn' type="submit">Отправить</button>
+          </form>
+        </section>
+
+
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

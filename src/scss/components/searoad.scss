@@ -1,0 +1,62 @@
+.map-block {
+  margin: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__top {
+    border: 1px solid rgb(62, 62, 62);
+    background: rgb(16, 16, 16);
+    padding: 20px;
+  }
+  &__img {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(62, 62, 62);
+    padding: 5px;
+  }
+  &__bottom {
+  }
+  &__item {
+    background: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(62, 62, 62);
+    color: #fff;
+    border-top: 0;
+    transition: all 0.3s ease-in;
+    &:nth-child(1) {
+      border: 1px solid rgb(62, 62, 62);
+    }
+    &:hover {
+      color: rgb(16, 16, 16);
+      background: #fff;
+    }
+  }
+  &__number {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__city {
+    padding: 20px;
+    border-left: 1px solid rgb(62, 62, 62);
+
+    font-family: Formular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
+.air-transport-page .customs__steps {
+  margin: 80px 20px;
+}
+.sanctions-page .steps {
+  margin-top: 40px;
+}
